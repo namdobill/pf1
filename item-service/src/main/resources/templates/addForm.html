@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/styles.css}"/>
+    <script th:src="@{/validateForm.js}"></script>
+</head>
+<body>
+<h1>Add Product</h1>
+<form action="/items/newItem" method="post" onsubmit="return validateForm()">
+    <label for="productName">Product Name</label>
+    <input type="text" id="productName" name="productName"><br><br>
+    <label for="price">Price</label>
+    <input type="number" id="price" name="price"><br><br>
+    <label for="quantity">Quantity</label>
+    <input type="number" id="quantity" name="quantity"><br><br>
+    <div>
+        <button type="submit">Add Product</button>
+        <button type="button" onclick="window.history.back()">Cancel</button>
+    </div>
+</form>
+</body>
+</html>
