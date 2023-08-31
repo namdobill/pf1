@@ -1,7 +1,7 @@
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3305/pp1
+    url: jdbc:mysql://port-0-item-service-1xxfe2bllzi5v9v.sel5.cloudtype.app:3305/pp1
     username: pp1-op
     password: 1234qwer
   jpa:
